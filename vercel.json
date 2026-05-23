@@ -1,5 +1,5 @@
 {
-  "buildCommand": "cd simple-mind-map && npm install && cd ../web && npm install && npm run build",
-  "outputDirectory": "./",
-  "installCommand": ""
+  "installCommand": "cd simple-mind-map && npm install && cd ../web && npm install",
+  "buildCommand": "cd web && npm run build",
+  "outputDirectory": "./"
 }
