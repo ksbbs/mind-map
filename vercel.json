@@ -1,5 +1,5 @@
 {
-  "installCommand": "cd simple-mind-map && npm install && cd ../web && npm install",
-  "buildCommand": "cd web && npm run build",
-  "outputDirectory": "./"
+  "buildCommand": "cd simple-mind-map && npm install && cd ../web && export NODE_OPTIONS=--openssl-legacy-provider && npm install && npm run build",
+  "outputDirectory": "./",
+  "installCommand": ""
 }
