@@ -12,6 +12,7 @@ export const numberList = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 // 化学符号
 export const chemicalSymbolList = [
   { label: '→', tex: ' \\to ', desc: '反应箭头', type: 'arrow' },
+  { label: '=', tex: ' = ', desc: '等号', type: 'arrow' },
   { label: '⇌', tex: ' \\rightleftharpoons ', desc: '可逆反应', type: 'arrow' },
   { label: '↑', tex: '\\uparrow', desc: '气体', type: 'state' },
   { label: '↓', tex: '\\downarrow', desc: '沉淀', type: 'state' },
