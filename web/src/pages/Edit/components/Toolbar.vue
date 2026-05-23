@@ -174,6 +174,8 @@ const defaultBtnList = [
   'summary',
   'associativeLine',
   'formula',
+  'chemical',
+  'functionPlot',
   // 'attachment',
   'outerFrame',
   'annotation',
@@ -221,7 +223,7 @@ export default {
       let res = [...defaultBtnList]
       if (!this.openNodeRichText) {
         res = res.filter(item => {
-          return item !== 'formula'
+          return item !== 'formula' && item !== 'chemical'
         })
       }
       if (!this.enableAi) {

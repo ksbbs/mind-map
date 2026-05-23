@@ -235,7 +235,8 @@ export default {
   },
   nodeTag: {
     title: 'Tag',
-    addTip: 'Press Enter to add'
+    addTip: 'Press Enter to add',
+    subjectTags: 'Subject Tags'
   },
   outline: {
     title: 'Outline',
@@ -334,6 +335,8 @@ export default {
     associativeLine: 'Associative line',
     painter: 'Painter',
     formula: 'Formula',
+    chemical: 'Chemistry',
+    functionPlot: 'Graph',
     attachment: 'Attachment',
     outerFrame: 'Outer frame',
     more: 'More',
@@ -401,7 +404,46 @@ export default {
     placeholder: 'Please enter LaTeX syntax',
     confirm: 'Confirm',
     common: 'Common formulas',
-    tip: 'Inserting formulas is not supported in non rich text mode'
+    tip: 'Inserting formulas is not supported in non rich text mode',
+    tab_math: 'Math',
+    tab_physics: 'Physics',
+    tab_chemistry: 'Chemistry',
+    chemistryTip: 'Please use the "Chemistry" tool for chemical equations',
+    visualMode: 'Visual',
+    latexMode: 'LaTeX'
+  },
+  chemicalSidebar: {
+    title: 'Chemistry',
+    elements: 'Elements',
+    symbols: 'Symbols',
+    templates: 'Templates',
+    arrows: 'Arrows',
+    conditions: 'Conditions',
+    ions: 'Ions/Charge',
+    placeholder: 'Click elements and symbols to build, or type LaTeX',
+    confirm: 'Insert',
+    tip: 'Not supported in non rich text mode',
+    category_all: 'All',
+    category_inorganic: 'Inorganic',
+    category_organic: 'Organic',
+    category_electrochemistry: 'Electrochemistry',
+    category_ion: 'Ionic Reactions'
+  },
+  functionPlotSidebar: {
+    title: 'Function Plot',
+    expression: 'Expression',
+    expressionPlaceholder: 'e.g. sin(x), x^2+2*x+1, 1/x',
+    presets: 'Presets',
+    params: 'Parameters',
+    xRange: 'X Range',
+    color: 'Color',
+    lineWidth: 'Line Width',
+    showGrid: 'Show Grid',
+    showAxes: 'Show Axes',
+    insert: 'Insert as Node Image',
+    insertSuccess: 'Image inserted',
+    invalidExpression: 'Invalid expression',
+    selectNodeFirst: 'Please select a node first'
   },
   richTextToolbar: {
     bold: 'Bold',

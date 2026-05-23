@@ -13,6 +13,7 @@ import { getLang } from '@/api'
 // const vConsole = new VConsole()
 
 Vue.config.productionTip = false
+Vue.config.ignoredElements = ['math-field']
 const bus = new Vue()
 Vue.prototype.$bus = bus
 Vue.use(ElementUI)

@@ -83,6 +83,57 @@ export const supportRootLineKeepSameInCurveLayouts = [
   'organizationStructure'
 ]
 
+// 物理公式模板列表
+export const physicsFormulaList = [
+  // 运动学
+  { label: '平均速度', tex: '\\bar{v} = \\frac{\\Delta x}{\\Delta t}', group: '运动学' },
+  { label: '加速度', tex: 'a = \\frac{v_t - v_0}{t}', group: '运动学' },
+  { label: '匀变速位移-时间', tex: 'x = v_0 t + \\frac{1}{2} a t^2', group: '运动学' },
+  { label: '匀变速速度-位移', tex: 'v_t^2 - v_0^2 = 2 a x', group: '运动学' },
+  { label: '自由落体高度', tex: 'h = \\frac{1}{2} g t^2', group: '运动学' },
+  { label: '竖直上抛最大高度', tex: 'h = \\frac{v_0^2}{2g}', group: '运动学' },
+  { label: '抛体运动水平位移', tex: 'x = v_0 \\cos\\theta \\cdot t', group: '运动学' },
+  { label: '抛体运动竖直位移', tex: 'y = v_0 \\sin\\theta \\cdot t - \\frac{1}{2} g t^2', group: '运动学' },
+  // 力学
+  { label: '牛顿第二定律', tex: 'F = m a', group: '力学' },
+  { label: '重力', tex: 'G = m g', group: '力学' },
+  { label: '滑动摩擦力', tex: 'f = \\mu N', group: '力学' },
+  { label: '胡克定律', tex: 'F = k x', group: '力学' },
+  { label: '万有引力定律', tex: 'F = G \\frac{M m}{r^2}', group: '力学' },
+  { label: '向心力', tex: 'F = m \\frac{v^2}{r} = m \\omega^2 r', group: '力学' },
+  { label: '动能', tex: 'E_k = \\frac{1}{2} m v^2', group: '力学' },
+  { label: '重力势能', tex: 'E_p = m g h', group: '力学' },
+  { label: '动能定理', tex: 'W = \\Delta E_k = \\frac{1}{2} m v_2^2 - \\frac{1}{2} m v_1^2', group: '力学' },
+  { label: '机械能守恒定律', tex: 'E_{k1} + E_{p1} = E_{k2} + E_{p2}', group: '力学' },
+  { label: '动量定理', tex: 'F t = m v_t - m v_0', group: '力学' },
+  { label: '动量守恒定律', tex: 'm_1 v_1 + m_2 v_2 = m_1 v_1\' + m_2 v_2\'', group: '力学' },
+  { label: '简谐运动回复力', tex: 'F = -k x', group: '力学' },
+  { label: '单摆周期', tex: 'T = 2\\pi \\sqrt{\\frac{l}{g}}', group: '力学' },
+  // 电磁学
+  { label: '库仑定律', tex: 'F = k \\frac{Q_1 Q_2}{r^2}', group: '电磁学' },
+  { label: '电场强度', tex: 'E = \\frac{F}{q}', group: '电磁学' },
+  { label: '点电荷电场强度', tex: 'E = k \\frac{Q}{r^2}', group: '电磁学' },
+  { label: '电势差与电场强度', tex: 'E = \\frac{U}{d}', group: '电磁学' },
+  { label: '电场力做功', tex: 'W = q U', group: '电磁学' },
+  { label: '欧姆定律', tex: 'I = \\frac{U}{R}', group: '电磁学' },
+  { label: '电阻定律', tex: 'R = \\rho \\frac{l}{S}', group: '电磁学' },
+  { label: '电功率', tex: 'P = U I = I^2 R = \\frac{U^2}{R}', group: '电磁学' },
+  { label: '焦耳定律', tex: 'Q = I^2 R t', group: '电磁学' },
+  { label: '安培力', tex: 'F = B I L \\sin\\theta', group: '电磁学' },
+  { label: '洛伦兹力', tex: 'F = q v B \\sin\\theta', group: '电磁学' },
+  { label: '法拉第电磁感应定律', tex: 'E = n \\frac{\\Delta \\Phi}{\\Delta t}', group: '电磁学' },
+  { label: '切割磁感线电动势', tex: 'E = B L v \\sin\\theta', group: '电磁学' },
+  // 热学
+  { label: '理想气体状态方程', tex: '\\frac{P_1 V_1}{T_1} = \\frac{P_2 V_2}{T_2}', group: '热学' },
+  { label: '克拉伯龙方程', tex: 'P V = n R T', group: '热学' },
+  { label: '热力学第一定律', tex: '\\Delta U = Q + W', group: '热学' },
+  // 波动光学
+  { label: '波长频率波速', tex: 'v = \\lambda f', group: '波动与光学' },
+  { label: '折射定律', tex: 'n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2', group: '波动与光学' },
+  { label: '折射率与速度', tex: 'n = \\frac{c}{v}', group: '波动与光学' },
+  { label: '双缝干涉条纹间距', tex: '\\Delta x = \\frac{L}{d} \\lambda', group: '波动与光学' }
+]
+
 // 彩虹线条配置
 export const rainbowLinesOptions = [
   {

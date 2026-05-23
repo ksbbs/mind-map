@@ -42,6 +42,8 @@
     <OutlineEdit v-if="mindMap" :mindMap="mindMap"></OutlineEdit>
     <Scrollbar v-if="isShowScrollbar && mindMap" :mindMap="mindMap"></Scrollbar>
     <FormulaSidebar v-if="mindMap" :mindMap="mindMap"></FormulaSidebar>
+    <ChemicalSidebar v-if="mindMap" :mindMap="mindMap"></ChemicalSidebar>
+    <FunctionPlotSidebar v-if="mindMap" :mindMap="mindMap"></FunctionPlotSidebar>
     <NodeOuterFrame v-if="mindMap" :mindMap="mindMap"></NodeOuterFrame>
     <NodeTagStyle v-if="mindMap" :mindMap="mindMap"></NodeTagStyle>
     <Setting :configData="mindMapConfig" :mindMap="mindMap"></Setting>
@@ -118,6 +120,8 @@ import { getParentWithClass } from '@/utils'
 import Scrollbar from './Scrollbar.vue'
 import exampleData from 'simple-mind-map/example/exampleData'
 import FormulaSidebar from './FormulaSidebar.vue'
+import ChemicalSidebar from './ChemicalSidebar.vue'
+import FunctionPlotSidebar from './FunctionPlotSidebar.vue'
 import NodeOuterFrame from './NodeOuterFrame.vue'
 import NodeTagStyle from './NodeTagStyle.vue'
 import Setting from './Setting.vue'
@@ -178,6 +182,8 @@ export default {
     OutlineEdit,
     Scrollbar,
     FormulaSidebar,
+    ChemicalSidebar,
+    FunctionPlotSidebar,
     NodeOuterFrame,
     NodeTagStyle,
     Setting,
@@ -244,7 +250,7 @@ export default {
     this.$bus.$on('localStorageExceeded', this.onLocalStorageExceeded)
     window.addEventListener('resize', this.handleResize)
     this.$bus.$on('showDownloadTip', this.showDownloadTip)
-    this.webTip()
+    // this.webTip()
   },
   beforeDestroy() {
     this.$bus.$off('execCommand', this.execCommand)

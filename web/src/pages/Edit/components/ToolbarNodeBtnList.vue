@@ -157,6 +157,28 @@
         <span class="text">{{ $t('toolbar.formula') }}</span>
       </div>
       <div
+        v-if="item === 'chemical'"
+        class="toolbarBtn"
+        :class="{
+          disabled: activeNodes.length <= 0 || hasGeneralization
+        }"
+        @click="showChemical"
+      >
+        <span class="icon iconfont icongongshi"></span>
+        <span class="text">{{ $t('toolbar.chemical') }}</span>
+      </div>
+      <div
+        v-if="item === 'functionPlot'"
+        class="toolbarBtn"
+        :class="{
+          disabled: activeNodes.length <= 0 || hasGeneralization
+        }"
+        @click="showFunctionPlot"
+      >
+        <span class="icon iconfont iconimage"></span>
+        <span class="text">{{ $t('toolbar.functionPlot') }}</span>
+      </div>
+      <div
         v-if="item === 'attachment'"
         class="toolbarBtn"
         :class="{
@@ -297,6 +319,16 @@ export default {
     // 打开公式侧边栏
     showFormula() {
       this.setActiveSidebar('formulaSidebar')
+    },
+
+    // 打开化学公式侧边栏
+    showChemical() {
+      this.setActiveSidebar('chemicalSidebar')
+    },
+
+    // 打开函数图像侧边栏
+    showFunctionPlot() {
+      this.setActiveSidebar('functionPlotSidebar')
     },
 
     // 选择附件

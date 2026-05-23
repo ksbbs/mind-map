@@ -229,7 +229,8 @@ export default {
   },
   nodeTag: {
     title: '标签',
-    addTip: '请按回车键添加'
+    addTip: '请按回车键添加',
+    subjectTags: '学科标签'
   },
   outline: {
     title: '大纲',
@@ -327,6 +328,8 @@ export default {
     associativeLine: '关联线',
     painter: '格式刷',
     formula: '公式',
+    chemical: '化学',
+    functionPlot: '函数图像',
     attachment: '附件',
     outerFrame: '外框',
     more: '更多',
@@ -387,7 +390,46 @@ export default {
     placeholder: '请输入 LaTeX 语法',
     confirm: '完成',
     common: '常用公式',
-    tip: '非富文本模式下不支持插入公式'
+    tip: '非富文本模式下不支持插入公式',
+    tab_math: '数学',
+    tab_physics: '物理',
+    tab_chemistry: '化学',
+    chemistryTip: '化学方程式请使用"化学公式"工具',
+    visualMode: '可视化',
+    latexMode: 'LaTeX'
+  },
+  chemicalSidebar: {
+    title: '化学公式',
+    elements: '元素',
+    symbols: '符号',
+    templates: '方程式模板',
+    arrows: '反应箭头',
+    conditions: '反应条件',
+    ions: '离子/电荷',
+    placeholder: '点击元素和符号拼接化学式，或手动输入 LaTeX',
+    confirm: '插入',
+    tip: '非富文本模式下不支持插入化学式',
+    category_all: '全部',
+    category_inorganic: '无机化学',
+    category_organic: '有机化学',
+    category_electrochemistry: '电化学',
+    category_ion: '离子反应'
+  },
+  functionPlotSidebar: {
+    title: '函数图像',
+    expression: '函数表达式',
+    expressionPlaceholder: '如: sin(x), x^2+2*x+1, 1/x',
+    presets: '预设函数',
+    params: '图像参数',
+    xRange: 'x 范围',
+    color: '线条颜色',
+    lineWidth: '线条粗细',
+    showGrid: '显示网格',
+    showAxes: '显示坐标轴',
+    insert: '插入为节点图片',
+    insertSuccess: '图像已插入',
+    invalidExpression: '表达式无效',
+    selectNodeFirst: '请先选择节点'
   },
   richTextToolbar: {
     bold: '加粗',
