@@ -1,5 +1,4 @@
 {
-  "framework": "vue",
   "buildCommand": "cd simple-mind-map && npm install && cd ../web && npm install && npm run build",
   "outputDirectory": "./",
   "installCommand": ""
