@@ -11,17 +11,7 @@
 
 > 中文名：思绪思维导图。一个简单&强大的 Web 思维导图库和思维导图软件。
 
-本项目包含两部分：开源的JavaScript库和闭源的客户端软件。
-
-# 库、Web
-
-> 即本仓库中的代码，目前已进入低维护状态。
-
-- 一个 `js` 思维导图库，不依赖任何框架，可以用来快速完成 Web 思维导图产品的开发。
-
->  开发文档：[https://wanglin2.github.io/mind-map-docs/](https://wanglin2.github.io/mind-map-docs/)
-
-- 一个 Web 思维导图，基于思维导图库、`Vue2.x`、`ElementUI` 开发，支持操作电脑本地文件，可以当做一个在线版思维导图应用使用，也可以自部署和二次开发。
+本仓库维护 Web 版思维导图，基于思维导图库、`Vue2.x`、`ElementUI` 开发，可作为在线思维导图使用，也可自行部署和二次开发。
 
 > 在线地址：[https://wanglin2.github.io/mind-map/](https://wanglin2.github.io/mind-map/)
 
